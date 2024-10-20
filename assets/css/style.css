@@ -8969,3 +8969,21 @@ img {
 .bg-yellow {
   background-color: yellow; /* Set the background color to yellow */
 }
+
+
+.testimonial {
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+}
+
+@media (max-width: 768px) {
+  .testimonial {
+    background-size: contain; /* Ensures image adapts to smaller screen sizes */
+  }
+}
+
+.testimonial img {
+  width: 100%; /* Makes sure the image takes up the full width */
+  height: auto; /* Ensures that the aspect ratio is maintained */
+}
