@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meridiano Auto Works · Otay, Tijuana</title>
+  <meta name="description" content="Concept auto shop in Otay. Pick a vehicle and services to see an estimated repair price.">
+  <meta name="theme-color" content="#1C2430">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%231C2430'/%3E%3Ccircle cx='8' cy='8' r='4' fill='none' stroke='%23F0A202' stroke-width='1.6'/%3E%3Cpath d='M8 2.5V5M8 11v2.5M2.5 8H5M11 8h2.5' stroke='%23F0A202' stroke-width='1.4'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#estimate">Skip to estimate</a>
+  <header class="top">
+    <a class="logo" href="index.html">Meridiano</a>
+    <details class="nav">
+      <summary>Menu</summary>
+      <nav aria-label="Primary">
+        <a href="#estimate">Estimate</a>
+        <a href="#bay">The bay</a>
+        <a href="#visit">Find us</a>
+      </nav>
+    </details>
+  </header>
+
+  <main>
+    <section class="hero" id="estimate">
+      <div class="hero-copy">
+        <p class="eyebrow">Otay · Tijuana</p>
+        <h1>A price before you cross back.</h1>
+        <p class="lede">Meridiano Auto Works writes the estimate in the open. Pick the vehicle, tick the work, and the number updates. The final bill waits for a look under the car — usually within ten percent of this figure.</p>
+        <p class="meta">Vía de la Juventud Oriente 220 · Mon–Sat 8–6</p>
+      </div>
+      <form class="invoice" id="invoice" novalidate>
+        <p class="kicker">Estimate</p>
+        <fieldset>
+          <legend>Vehicle</legend>
+          <div class="vehicles" id="vehicles"></div>
+        </fieldset>
+        <fieldset>
+          <legend>Work</legend>
+          <div id="services"></div>
+        </fieldset>
+        <div id="totals"></div>
+        <div id="hold"></div>
+      </form>
+    </section>
+
+    <section class="bay" id="bay">
+      <h2>What the number includes</h2>
+      <ul>
+        <li>Labor scaled to the vehicle. A compact is quicker on the rack than a van.</li>
+        <li>Parts at the price we paid this month, not a mystery line.</li>
+        <li>A four percent shop-supplies line, shown, not folded in.</li>
+        <li>No charge for the estimate itself. If we cannot take the job this week, we say so.</li>
+      </ul>
+    </section>
+
+    <section class="visit" id="visit">
+      <h2>Five minutes from the Otay crossing.</h2>
+      <p>Leave the car, walk to a coffee, come back when we text. Shuttle notes toward the line if you are on foot. Desk: (664) 555-0194.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Meridiano Auto Works is fictitious. Quotes are not sent to a shop.</p>
+    <p class="concept-note"><a href="../index.html">All demos</a> · <a href="https://timeless-digital.com/">Concept project by Timeless Digital</a></p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

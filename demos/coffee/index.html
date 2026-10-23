@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Humo Lento Roasters · Little Italy, San Diego</title>
+  <meta name="description" content="Concept coffee roaster in Little Italy. Shop bags, fill a cart, and finish a mock pickup checkout.">
+  <meta name="theme-color" content="#2A1C16">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%232A1C16'/%3E%3Cpath d='M5 9.5c0 2 1.3 3.2 3 3.2s3-1.2 3-3.2V4H5v5.5z' fill='%23F6F1E8'/%3E%3Cpath d='M11 6.2h1.2c.8 0 1.3.6 1.3 1.3S13 8.8 12.2 8.8H11' fill='none' stroke='%23F6F1E8' stroke-width='1'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,560;0,9..144,680;1,9..144,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#shop">Skip to shop</a>
+  <header class="top">
+    <a class="logo" href="index.html">Humo Lento</a>
+    <div class="top-actions">
+      <button type="button" class="cart-btn" id="open-cart">Cart <span id="nav-count">0</span></button>
+      <details class="nav">
+        <summary>Menu</summary>
+        <nav aria-label="Primary">
+          <a href="#shop">Shop</a>
+          <a href="#story">Roastery</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=1800&amp;q=75" alt="A cup of coffee on a wooden counter" width="1800" height="1200">
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Roasted on Fir Street · San Diego</p>
+        <h1>Humo Lento</h1>
+        <p class="lede">Small-lot coffee, roasted slowly enough that the Oaxaca still tastes like Oaxaca. We cup with cafés in Tijuana every other Thursday.</p>
+        <a class="hero-link" href="#shop">Shop the current roast</a>
+      </div>
+    </section>
+
+    <section class="shop" id="shop">
+      <header class="section-head">
+        <h2>On the shelf</h2>
+        <p>12 oz bags. Order by 2 p.m. and pick up the same afternoon, or hold it for the Sunday mesa in Playas.</p>
+      </header>
+      <div class="layout">
+        <div id="products" class="products"></div>
+        <aside class="cart" id="cart" aria-live="polite"></aside>
+      </div>
+    </section>
+
+    <section class="checkout" id="checkout" hidden>
+      <div class="checkout-grid">
+        <form id="checkout-form" novalidate>
+          <h2>Checkout</h2>
+          <p class="hint">A mock pickup order. Nothing is charged and no card number is asked for.</p>
+          <label>Name<input name="name" autocomplete="name" required></label>
+          <label>Email<input name="email" type="email" autocomplete="email" required></label>
+          <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+          <fieldset>
+            <legend>Pickup</legend>
+            <label class="radio"><input type="radio" name="pickup" value="Little Italy roastery — 750 W Fir St" checked> Little Italy roastery — 750 W Fir St</label>
+            <label class="radio"><input type="radio" name="pickup" value="Sunday mesa, Playas de Tijuana, 10–1"> Sunday mesa, Playas de Tijuana, 10–1</label>
+          </fieldset>
+          <fieldset>
+            <legend>When</legend>
+            <label class="radio"><input type="radio" name="when" value="Today after 3" checked> Today after 3</label>
+            <label class="radio"><input type="radio" name="when" value="Tomorrow morning"> Tomorrow morning</label>
+            <label class="radio"><input type="radio" name="when" value="This weekend"> This weekend</label>
+          </fieldset>
+          <fieldset>
+            <legend>Payment</legend>
+            <label class="radio"><input type="radio" name="pay" value="Pay at pickup" checked> Pay at pickup</label>
+            <p class="hint">Demo only. We do not take card numbers on this page.</p>
+          </fieldset>
+          <p class="error" id="check-error" hidden></p>
+          <div class="row-actions">
+            <button type="button" class="ghost" id="back-shop">Back to the shelf</button>
+            <button type="submit" class="solid">Place pickup order</button>
+          </div>
+        </form>
+        <aside id="checkout-summary"></aside>
+      </div>
+    </section>
+
+    <section class="confirm" id="confirm" hidden></section>
+
+    <section class="story" id="story">
+      <h2>The room smells like the roast you will take home.</h2>
+      <p>Humo Lento is a twelve-kilo machine, a window onto Fir Street, and a notebook of coffees from Oaxaca, Chiapas, and the occasional natural from Sidama. If you are driving down, the Sunday mesa in Playas is a folding table and a kettle. Same bags.</p>
+      <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&amp;fit=crop&amp;w=1400&amp;q=70" alt="Roasted coffee beans" width="1400" height="900">
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Humo Lento is a fictitious roaster.</p>
+    <p class="concept-note"><a href="../index.html">All demos</a> · <a href="https://timeless-digital.com/">Concept project by Timeless Digital</a></p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

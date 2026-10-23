@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lindero Realty · San Diego &amp; Tijuana</title>
+  <meta name="description" content="Concept real estate desk listing homes in San Diego and Tijuana. Filter by price, bedrooms, and neighborhood.">
+  <meta name="theme-color" content="#1A2421">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%231A2421'/%3E%3Cpath d='M3 8.5 8 4l5 4.5V13H3z' fill='%23C2502E'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#listings">Skip to listings</a>
+  <header class="top">
+    <a class="logo" href="index.html">Lindero</a>
+    <details class="nav">
+      <summary>Menu</summary>
+      <nav aria-label="Primary">
+        <a href="#listings">Listings</a>
+        <a href="#desk">The desk</a>
+        <a href="#filters">Filter</a>
+      </nav>
+    </details>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">San Diego · Tijuana</p>
+        <h1>Lindero</h1>
+        <p class="lede">Homes on both sides of the line, listed by people who drive both. Prices in USD so you can compare a flat in Zona Río with a bungalow in North Park without a second tab.</p>
+      </div>
+      <form class="filters" id="filters">
+        <label>Price
+          <select id="price" name="price">
+            <option value="any">Any price</option>
+            <option value="u400">Under $400k</option>
+            <option value="400">$400–800k</option>
+            <option value="800">$800k–$1.2M</option>
+            <option value="1200">$1.2M and up</option>
+          </select>
+        </label>
+        <label>Bedrooms
+          <select id="beds" name="beds">
+            <option value="0">Any</option>
+            <option value="1">1+</option>
+            <option value="2">2+</option>
+            <option value="3">3+</option>
+            <option value="4">4+</option>
+          </select>
+        </label>
+        <label>Area
+          <select id="area" name="area">
+            <option value="all">All areas</option>
+            <option>North Park</option>
+            <option>Ocean Beach</option>
+            <option>Chula Vista</option>
+            <option>Coronado</option>
+            <option>La Jolla</option>
+            <option>Barrio Logan</option>
+            <option>Zona Río</option>
+            <option>Playas de Tijuana</option>
+          </select>
+        </label>
+        <p class="count" id="result-count" aria-live="polite"></p>
+      </form>
+      <figure class="hero-photo">
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&amp;fit=crop&amp;w=1800&amp;q=75" alt="A modern house with a long view" width="1800" height="1200">
+      </figure>
+    </section>
+
+    <section class="listings" id="listings">
+      <div id="results"></div>
+    </section>
+
+    <section class="desk" id="desk">
+      <h2>A small desk, two cities.</h2>
+      <p>Lindero keeps eight to twelve listings at a time. We work from a room on Kettner and a Saturday table in Zona Río. Showings are held on the house’s clock, not ours — tell us which side of the border you are starting from.</p>
+      <p>2120 Kettner Blvd, Suite 4, San Diego · Saturday desk by the river park in Zona Río.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Lindero is a fictitious brokerage. Listing photos are stock.</p>
+    <p class="concept-note"><a href="../index.html">All demos</a> · <a href="https://timeless-digital.com/">Concept project by Timeless Digital</a></p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

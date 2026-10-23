@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mesa de Leña · Taquería on Calle Sexta</title>
+  <meta name="description" content="Concept taquería in Zona Centro, Tijuana. Build a pickup order from the menu and watch the total add up.">
+  <meta name="theme-color" content="#1B120C">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='2' fill='%231B120C'/%3E%3Ccircle cx='8' cy='9' r='3.2' fill='%23E9A825'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,560;0,9..144,680;1,9..144,520&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#menu">Skip to menu</a>
+  <header class="top">
+    <a class="logo" href="index.html">Mesa de Leña</a>
+    <details class="nav">
+      <summary>Menu</summary>
+      <nav aria-label="Primary">
+        <a href="#menu">Order</a>
+        <a href="#visit">Visit</a>
+        <a href="#cart">Ticket <span id="nav-count">0</span></a>
+      </nav>
+    </details>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-copy">
+        <p class="eyebrow">Taquería · Calle Sexta, Tijuana</p>
+        <h1>Mesa de Leña</h1>
+        <p class="lede">Al pastor off a slow trompo, suadero with crisp edges, and horchata that actually tastes like rice. Order here, pay at the window.</p>
+        <p class="meta"><span>Tue–Sun</span><span>Closed Monday</span><span>Prices in USD</span></p>
+        <a class="hero-link" href="#menu">Build an order</a>
+      </div>
+      <figure class="hero-photo">
+        <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&amp;fit=crop&amp;w=1600&amp;q=75" alt="Corn tortillas filled with meat, onion, and cilantro" width="1600" height="1067">
+        <figcaption class="stamp">Open tonight<span>until the trompo is gone</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="order-wrap" id="menu">
+      <div class="order">
+        <div class="menu-col">
+          <header class="section-head">
+            <h2>La carta</h2>
+            <p>Tortillas pressed to order. Salsa roja is the hot one; verde is brighter and still not shy.</p>
+          </header>
+          <div class="cats" id="cats" role="toolbar" aria-label="Menu categories"></div>
+          <div id="menu-list" class="menu-list"></div>
+        </div>
+        <aside class="cart" id="cart" aria-live="polite"></aside>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div>
+        <h2>Come by</h2>
+        <p>Calle Sexta 912<br>Zona Centro, Tijuana, B.C.</p>
+        <p>A short walk from the arch if you crossed at San Ysidro on foot. Stools face the plancha. Buen provecho.</p>
+      </div>
+      <dl class="hours">
+        <div><dt>Tue – Thu</dt><dd>12–9</dd></div>
+        <div><dt>Fri – Sun</dt><dd>12–11</dd></div>
+        <div><dt>Monday</dt><dd>Closed</dd></div>
+        <div><dt>Window</dt><dd>(664) 555-0148</dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Mesa de Leña is a fictitious taquería.</p>
+    <p class="concept-note"><a href="../index.html">All demos</a> · <a href="https://timeless-digital.com/">Concept project by Timeless Digital</a></p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
