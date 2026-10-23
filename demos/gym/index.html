@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Club Senda · Barrio Logan</title>
+  <meta name="description" content="Concept gym in Barrio Logan. Filter the weekly class schedule and compare membership plans.">
+  <meta name="theme-color" content="#10110e">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%2310110E'/%3E%3Cpath d='M2 7h2l1-2h6l1 2h2v2h-2l-1 2H5l-1-2H2z' fill='%23FF4D1C'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#schedule">Skip to schedule</a>
+  <header class="top">
+    <a class="logo" href="index.html">Club Senda</a>
+    <details class="nav">
+      <summary>Menu</summary>
+      <nav aria-label="Primary">
+        <a href="#schedule">Schedule</a>
+        <a href="#plans">Membership</a>
+        <a href="#visit">Visit</a>
+      </nav>
+    </details>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&amp;fit=crop&amp;w=1800&amp;q=75" alt="A weight room with racks and open floor" width="1800" height="1200">
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Barrio Logan · San Diego</p>
+        <h1>Train where the week actually fits.</h1>
+        <p class="lede">Strength, boxing, and yoga that does not ask you to whisper. Dawn classes, a lunch slot, and a room that smells like chalk instead of perfume.</p>
+        <a class="hero-link" href="#schedule">See this week</a>
+      </div>
+    </section>
+
+    <section class="schedule" id="schedule">
+      <header class="section-head">
+        <h2>The week</h2>
+        <p>Filter by day and by what you came for. Coaches post the whiteboard at 5:40 a.m. This board is the same list.</p>
+      </header>
+      <div class="filters">
+        <div class="chips" id="day-chips" role="toolbar" aria-label="Day"></div>
+        <div class="chips" id="type-chips" role="toolbar" aria-label="Class type"></div>
+      </div>
+      <div id="class-list" class="class-list"></div>
+    </section>
+
+    <section class="plans" id="plans">
+      <header class="section-head">
+        <h2>Membership</h2>
+        <p>Three ways in. Annual is ten months’ money for the year — two months included, no small print about towels.</p>
+        <div class="billing" role="group" aria-label="Billing period">
+          <button type="button" id="bill-month" aria-pressed="true">Monthly</button>
+          <button type="button" id="bill-year" aria-pressed="false">Annual</button>
+        </div>
+      </header>
+      <div id="plan-table"></div>
+      <form id="join" class="join hidden" novalidate>
+        <h3 id="join-title">Join</h3>
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+        <label>Start<input name="start" type="date" required></label>
+        <p class="error" id="join-error" hidden></p>
+        <button type="submit" class="solid">Hold my spot</button>
+        <p id="join-done" class="done" hidden></p>
+      </form>
+    </section>
+
+    <section class="visit" id="visit">
+      <h2>2150 Logan Ave</h2>
+      <p>San Diego, CA 92113. Street parking on the side streets. Members on Ridge and Summit can join the Saturday long session we host in Cacho, Tijuana — ask the desk, it is included.</p>
+      <p>Open gym 5:30 a.m.–9 p.m. weekdays. Saturday 7–2. Sunday the room rests.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Club Senda is a fictitious gym.</p>
+    <p class="concept-note"><a href="../index.html">All demos</a> · <a href="https://timeless-digital.com/">Concept project by Timeless Digital</a></p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

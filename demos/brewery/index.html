@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rumor Brewing · Taproom on Revolución</title>
+  <meta name="description" content="Concept brewery in downtown Tijuana. Filter the tap list by style and save a seat on the events calendar.">
+  <meta name="theme-color" content="#1C140F">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%231C140F'/%3E%3Cpath d='M6 3h4l-.4 8.2A1.8 1.8 0 0 1 7.8 13 1.8 1.8 0 0 1 6.4 11.2z' fill='%23E08A1E'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Fraunces:ital,opsz,wght@0,9..144,560;1,9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#taps">Skip to the tap list</a>
+  <header class="top">
+    <a class="logo" href="index.html">Rumor</a>
+    <details class="nav">
+      <summary>Menu</summary>
+      <nav aria-label="Primary">
+        <a href="#taps">Taps</a>
+        <a href="#calendar">Events</a>
+        <a href="#visit">Visit</a>
+      </nav>
+    </details>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&amp;fit=crop&amp;w=1800&amp;q=75" alt="A row of beer taps in a dark taproom" width="1800" height="1200">
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Cervecería · Avenida Revolución, Tijuana</p>
+        <h1>Rumor</h1>
+        <p class="lede">Ten taps, poured a short ride from the San Ysidro line when the line is kind. Filter the board. Stay for whatever is on the calendar.</p>
+        <div class="chips" id="style-chips" role="toolbar" aria-label="Beer style"></div>
+      </div>
+    </section>
+
+    <section class="taps" id="taps">
+      <header class="section-head">
+        <h2>On tap</h2>
+        <p id="tap-count" aria-live="polite"></p>
+      </header>
+      <div id="tap-list"></div>
+    </section>
+
+    <section class="events" id="calendar">
+      <header class="section-head">
+        <h2>Calendario</h2>
+        <p>Trivia on Tuesdays, son jarocho on Fridays, mariscos on Saturday afternoon. Save a seat — it stays on this phone, not on our clipboard, because this taproom is a concept.</p>
+      </header>
+      <div class="cal-layout">
+        <div>
+          <div class="cal-nav">
+            <button type="button" id="prev-month" aria-label="Previous month">←</button>
+            <h3 id="month-label"></h3>
+            <button type="button" id="next-month" aria-label="Next month">→</button>
+          </div>
+          <div class="dow" aria-hidden="true"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+          <div id="cal-grid" class="cal-grid"></div>
+        </div>
+        <aside id="day-detail" class="day-detail" aria-live="polite"></aside>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <h2>Av. Revolución 844</h2>
+      <p>Zona Centro, Tijuana. Open Wed–Sun, 1 to 10. The patio fits a dozen. Flights are four 5 oz pours, built at the bar — tell them which styles you already ruled out.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Rumor Brewing is a fictitious taproom.</p>
+    <p class="concept-note"><a href="../index.html">All demos</a> · <a href="https://timeless-digital.com/">Concept project by Timeless Digital</a></p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
