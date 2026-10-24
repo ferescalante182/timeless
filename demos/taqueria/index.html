@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mesa de Leña · Taquería on Calle Sexta</title>
-  <meta name="description" content="Concept taquería in Zona Centro, Tijuana. Build a pickup order from the menu and watch the total add up.">
+  <meta name="description" content="Concept taquería in Zona Centro, Tijuana. Customize each item and watch the ticket total add up.">
   <meta name="theme-color" content="#1B120C">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='2' fill='%231B120C'/%3E%3Ccircle cx='8' cy='9' r='3.2' fill='%23E9A825'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,7 +46,7 @@
         <div class="menu-col">
           <header class="section-head">
             <h2>La carta</h2>
-            <p>Tortillas pressed to order. Salsa roja is the hot one; verde is brighter and still not shy.</p>
+            <p>Tap a plate to dress it. Corn or flour, salsa on or off, guacamole if you mean it. Salsa roja is the hot one; verde is brighter and still not shy.</p>
           </header>
           <div class="cats" id="cats" role="toolbar" aria-label="Menu categories"></div>
           <div id="menu-list" class="menu-list"></div>
@@ -69,6 +69,11 @@
       </dl>
     </section>
   </main>
+
+  <div id="customizer" class="customizer" hidden>
+    <div class="customizer-backdrop" data-close></div>
+    <div class="customizer-panel" id="customizer-panel" role="dialog" aria-modal="true" aria-labelledby="customizer-title" tabindex="-1"></div>
+  </div>
 
   <footer class="site-footer">
     <p>Mesa de Leña is a fictitious taquería.</p>
